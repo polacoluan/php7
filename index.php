@@ -1,29 +1,30 @@
 <?php 
-echo "
-<center><a href='www.econeteditora.com.br' target='blank'<button type='button' class='btn btn-secondary'><h1>Insta Gabriela</h1></button></a></center>";
+
+//Funcao para ver o tipo de uma variavel
+echo "Exibindo o tipo de uma variavel: ";
+$aux = "Curso PHP";
+var_dump($aux);
+echo "<br>";
+
+//Limpar uma variavel
+/*unset($aux);
+echo "<br>";*/
+
+//Verifica se uma variavel existe
+echo "Verifica se a variavel existe: ";
+if(isset($aux)){
+	echo $aux;
+}
+echo "<br>";
+
+//Concatenacao
+echo "Exibe um exemplo de concatenacao: ";
+$aux2 = $aux . " - 7";
+echo $aux2;
+echo "<br>";
+
+//Tipos de dados
+//Basicos
+$string = "Exemplo";
+$site = 'www.econeteditora.com.br';
 ?> 
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<title>.:Hora do Lanche:.</title>
-</head>
-<body>
-<h1>Hora do lanche</h1>
-
-<table class="table table-bordered">
-	<thead>
-		<th>Tabela de precos</th>
-	</thead>
-	<tr>
-		<td>Pastel</td>
-		<td>2.50</td>
-	</tr>
-</table>
-
-</body>
-</html>
